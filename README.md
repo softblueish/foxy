@@ -5,3 +5,5 @@ You can change the % chance in ``chance.conf``
 This program requires you have SDL3 installed and are also running Windows (due to the heavy use of transparent windows), sorry Linux users.
 ## How to build
 ``g++ .\main.cpp -lSDL3 -mwindows -o foxy.exe``
+## Inspiration
+This program was inspired by the [1/10000 Chance for Withered Foxy Jumpscare Every Second](https://steamcommunity.com/sharedfiles/filedetails/?id=3481943642) terraria mod by YMY.
