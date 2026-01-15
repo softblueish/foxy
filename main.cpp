@@ -3,9 +3,11 @@
 #include <SDL3/SDL_audio.h>
 #include <windows.h>
 #include <iostream>
+#include <fstream>
 #include <random>
 
-const double chance = 0.0001;
+double percentageChance = 0.00001;
+double chance = 0;
 
 bool foxyTime = false;
 bool quit = false;
@@ -52,6 +54,12 @@ int main(){
     SDL_AudioStream *audioStream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &jumpscareAudioSpec, NULL, NULL);
     SDL_ResumeAudioStreamDevice(audioStream);
 
+    std::string readBuffer;
+    std::ifstream configFile("chance.conf");
+    getline(configFile, readBuffer);
+    percentageChance = std::stold(readBuffer);
+    chance = percentageChance/100;
+
     while(!quit){
         SDL_Event event;
         while(SDL_PollEvent(&event)) {
@@ -64,8 +72,7 @@ int main(){
             if(GetAsyncKeyState(keyCode) & 0x8000){
                 if(rand() % (int)(1/chance) == 0)
                     foxyTime = true;
-                else
-                    while(GetAsyncKeyState(keyCode) & 0x8000);
+                while(GetAsyncKeyState(keyCode) & 0x8000);
             }
 
         if(foxyTime) {
