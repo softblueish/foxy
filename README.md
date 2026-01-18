@@ -3,7 +3,7 @@
 <img width="2879" height="1619" alt="example" src="https://github.com/user-attachments/assets/9711932b-ccd6-4149-8f16-df256277fe95" />
 
 ## How to use
-You just run the exe and it'll start working immediately as a background service! Doesn't work on Linux or macOS, I am so sorry please do not crucify me.
+You just run the exe and it'll start working immediately system-wide as a background service! Doesn't work on Linux or macOS, I am so sorry please do not crucify me.
 ## Changing settings
 You can change the % chance in ``settings.conf``. (100 means 100%, 0.1 means 0.1%)    
 You can also have the chance trigger every second if you'd like by setting ``timerMode=true`` in the ``settings.conf`` file.  
