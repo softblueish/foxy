@@ -105,6 +105,10 @@ int main(){
     SDL_AudioStream *audioStream = SDL_OpenAudioDeviceStream(SDL_AUDIO_DEVICE_DEFAULT_PLAYBACK, &jumpscareAudioSpec, NULL, NULL);
     SDL_ResumeAudioStreamDevice(audioStream);
 
+    SDL_RenderClear(streamerRenderer);
+    SDL_RenderPoint(streamerRenderer, 0, 0);
+    SDL_RenderPresent(streamerRenderer);
+
     while(!quit){
         SDL_Event event;
         while(SDL_PollEvent(&event)) {
