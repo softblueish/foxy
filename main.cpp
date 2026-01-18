@@ -109,10 +109,13 @@ int main(){
     SDL_RenderPoint(streamerRenderer, 0, 0);
     SDL_RenderPresent(streamerRenderer);
 
+    SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION, "Foxy", "The Foxy jumpscare program is now running! You can close it via Task Manager to stop it.", window);
+
     while(!quit){
         SDL_Event event;
         while(SDL_PollEvent(&event)) {
             if(event.type == SDL_EVENT_QUIT) {
+                SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_WARNING, "Foxy", "The Foxy jumpscare program has now stopped.", window);
                 quit = true;
             }
         }
