@@ -1,4 +1,5 @@
 # A program that has a chance of withered foxy jumpscaring you every keypress
+## You can [download it here](https://github.com/softblueish/foxy/releases/download/hotfix/Foxy-x86-64-Windows.zip)
 ## How to use
 You just run the exe and it'll start working immediately as a background service!
 You can change the % chance in ``settings.conf``.
