@@ -1,5 +1,5 @@
-# A program that has a chance of withered foxy jumpscaring you every keypress
 ## You can [download it here](https://github.com/softblueish/foxy/releases/download/Dialogue/Foxy-x86-64-Windows.zip)
+# A program that has a chance of withered foxy jumpscaring you every keypress
 <img width="2879" height="1619" alt="example" src="https://github.com/user-attachments/assets/9711932b-ccd6-4149-8f16-df256277fe95" />
 
 ## How to use
