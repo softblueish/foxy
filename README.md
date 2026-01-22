@@ -2,6 +2,7 @@
 # A program that has a chance of withered foxy jumpscaring you every keypress
 <img width="2879" height="1619" alt="example" src="https://github.com/user-attachments/assets/9711932b-ccd6-4149-8f16-df256277fe95" />
 <video width="630" height="300" src="https://github.com/user-attachments/assets/7532b7e1-2bbd-4d78-922d-77c35ba67643"></video>
+
 Video example by [LilaPMD on Youtube](https://www.youtube.com/channel/UCT550UpYYhsUmybnP1ojX-g) (Watch her content 💜)
 
 ## How to use
