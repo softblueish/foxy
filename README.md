@@ -1,8 +1,7 @@
 ## You can [download it here](https://github.com/softblueish/foxy/releases/download/Dialogue/Foxy-x86-64-Windows.zip)
 # A program that has a chance of withered foxy jumpscaring you every keypress
 <img width="2879" height="1619" alt="example" src="https://github.com/user-attachments/assets/9711932b-ccd6-4149-8f16-df256277fe95" />
-https://github.com/user-attachments/assets/071fa582-4e55-4207-9bc9-4b56ab1a2005
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/p36_eTNW47o?si=B5_8tJDk8Hg5ERoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## How to use
 You just run the exe and it'll start working immediately system-wide as a background service! Doesn't work on Linux or macOS, I am so sorry please do not crucify me.
