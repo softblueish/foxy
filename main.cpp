@@ -11,6 +11,7 @@ double chance = 0;
 
 bool timerMode = false;
 bool streamerMode = false;
+bool showWarning = false;
 
 bool foxyTime = false;
 bool quit = false;
@@ -55,6 +56,11 @@ void setSettings(){
         // Streamer mode
         if(title == "streamerMode"){
             streamerMode = getSettingValue(readBuffer) == "true";
+        }
+
+        // Warning message
+        if(title == "showWarning"){
+            showWarning = getSettingValue(readBuffer) == "true";
         }
 
     }
@@ -109,7 +115,9 @@ int main(){
     SDL_RenderPoint(streamerRenderer, 0, 0);
     SDL_RenderPresent(streamerRenderer);
 
-    SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION, "Foxy", "The Foxy jumpscare program is now running! Look for \"Foxy.exe\" in the Task Manager to close it.", window);
+    if(showWarning){
+        SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION, "Foxy", "The Foxy jumpscare program is now running! Look for \"Foxy.exe\" in the Task Manager to close it.", window);
+    }
 
     while(!quit){
         SDL_Event event;
